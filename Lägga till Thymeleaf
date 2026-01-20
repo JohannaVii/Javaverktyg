@@ -1,0 +1,31 @@
+Arkitektur
+Webbläsare
+   ↓
+Servlet (Controller)
+   ↓
+Thymeleaf (View)
+   ↓
+HTML Response
+
+1. Lägg till Thymeleaf som dependency
+(Thymeleaf använder sig av HTML-templates, ersätter println)
+
+2. Skapa mappstruktur src/main/resources/templates
+(Alla HTML-mallar ska läggas här)
+
+3. Skapa en Thymeleaf-konfiguration
+(public class ThymeleafConfig)
+
+4. Skapa en HTML-template
+(src/main/resources/templates/hello.html)
+(th:text ersätter innehållet)
+
+5. Använd Thymeleaf i en servlet
+(Uppdatera HelloServlet)
+
+6. Testa applikationen
+Starta servern och testa i webbläsaren:
+http://localhost:8080/hello
+
+Resultat:
+Hej världen
